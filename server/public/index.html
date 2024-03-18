@@ -4,51 +4,60 @@
     <meta charset="utf-8" />
     <title>Koalla Holla</title>
     <link rel="stylesheet" href="styles/style.css" />
-   
   </head>
   <body>
     <div id="content">
-      <header>
-        <nav class="logo">
-          <img src="images/icon.png" class="icon" />
-          <div class="pag-title">
+      <nav class="logo-title">
+        <img src="images/icon.png" class="icon" />
+         <div class="titlename">
             <h1>Koala Holla</h1>
             <h3>1976 Llama Comma Drive</h2>
-      <h3>Walla Walla, WA</h2>
-          </div>
-        </nav>
-      </header>
-      <section id="addKoala">
-        <h2>Add Koala</h2>
-        <input type="text" id="nameIn" value="" placeholder="Name" />
-        <input type="text" id="ageIn" value="" placeholder="Age" />
-        <input type="text" id="colorIn" value="" placeholder="Favorite Color" />
-        <input
-          type="text"
-          id="readyForTransferIn"
-          value=""
-          placeholder="Transfer"
-        />
-        <input type="text" id="notesIn" value="" placeholder="Notes" />
-        <button type="button" id="addButton">Add Koala</button>
-      </section>
-      <section>
-        <h2>All Koalas</h2>
-        <div class="display-info">  
-        <table id="displaydata">
-          <thead>
-            <tr>
-              <th>id</th>
-              <th>name</th>
-              <th>Favorite Color</th>
-              <th>age</th>
-              <th>Ready for Transfer</th>
-              <th>Notes</th>
-            </tr>
-          </thead>
-          <tbody></tbody>
-        </table>
+      <h3>Walla Walla, WA</h2> 
       </div>
+      </nav>
+     
+      <section class="Koala_registration">
+        <div class="registrationtitle">
+        <h2>Koalla Holla Resident Regisgration form</h2>
+      </div>
+        <form onsubmit="preventDefault(event);handleData()">
+          <input type="text" id="residentName" value="" placeholder="Name" />
+          <input
+            type="text"
+            id="residentFavoriteColor"
+            value=""
+            placeholder="Favorite Color"
+          />
+          <input type="text" id="residentAge" value="" placeholder="Age" />
+          <input
+            type="text"
+            id="readyForTransfer"
+            value=""
+            placeholder="Transfer"
+          />
+          <input type="text" id="residentNote" value="" placeholder="Notes" />
+          <input type="submit" value="Add Resident" id="addButton" />
+          <div class="empty"> <p class="emptycheck"></p></div>
+         
+        </form>
+     
+       <table class="displaydata">
+            <thead>
+              <tr>
+                <th>ID</th>
+                <th>name</th>
+                <th>Favorite Color</th>
+                <th>age</th>
+                <th>Ready for Transfer</th>
+                <th>Notes</th>
+                <th>Mark ready</th>
+                <th>Remove</th>
+                <th>Edit</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
+     
       </section>
     </div>
 
